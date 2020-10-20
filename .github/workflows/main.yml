@@ -22,8 +22,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      #PytTest action implementation
+      #PyTest action implementation
       - name: Python Pytest Github Action
         uses: fylein/python-pytest-github-action@v2
         with:
-          args: pip3 install -r requirements.txt && pytest /github/workspace/
+          args: pip3 install -r requirements.txt
+      
+      #Run Pytest
+      - name: Run PyTest
+        working-directory: /
+        run: ls -l
