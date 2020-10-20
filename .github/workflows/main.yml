@@ -30,5 +30,7 @@ jobs:
       
       #Run Pytest
       - name: Run PyTest
-        working-directory: /
-        run: ls -l
+#        working-directory: /
+        run: |
+          pwd
+          ls -l
