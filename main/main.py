@@ -2,7 +2,7 @@
 
 def hello(name):
     try :
-        return 'Hello ' + name
+        return 'hello ' + name
     except : 
         return 'Type error'
 
